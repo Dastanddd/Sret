@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    animation: moveblock 1s ease-in infinite;
+}
+
+@keyframes moveblock{
+    0%{
+        background-color: aqua;
+        margin-top:0px;
+    }
+    30%{
+        background-color: yellow;
+        margin-top: 100px;
+    }
+
+    50%{
+        background-color: blue;
+        margin-top: 500px;
+    }
+    100%{
+        background-color: brown;
+        margin-top: 100px;
+    }
+}
